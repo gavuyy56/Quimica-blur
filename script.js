@@ -4,5 +4,6 @@ function toggleContent(id) {
         content.style.display = "none";
     } else {
         content.style.display = "block";
+        content.scrollIntoView({ behavior: "smooth", block: "start" }); // Desplaza la vista al contenido
     }
 }
