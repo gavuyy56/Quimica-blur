@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+header h1 {
+    margin: 20px;
+    font-size: 3.5em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.block {
+    background-color: #7f2edb; /* Puedes cambiar el color aquí */
+    color: white;
+    margin: 15px;
+    padding: 20px;
+    width: 60%; /* Puedes ajustar el ancho según prefieras */
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.block:hover {
+    background-color: #50c256;
+}
+
+.content {
+    display: none;
+    margin-top: 10px;
+    background-color: #f1f1f1;
+    color: black;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
