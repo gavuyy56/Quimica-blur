@@ -6,7 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Cambiado de center a flex-start */
     height: 100vh;
     text-align: center;
 }
@@ -22,6 +22,8 @@ main {
     align-items: center;
     justify-content: center;
     width: 100%;
+    padding: 20px; /* Añadido padding para espacio alrededor de los bloques */
+    overflow-y: auto; /* Permite scroll si el contenido es demasiado grande */
 }
 
 .block {
@@ -46,6 +48,8 @@ main {
     color: black;
     padding: 15px;
     border-radius: 8px;
+    max-height: 300px; /* Establece una altura máxima para el contenido desplegable */
+    overflow-y: auto; /* Añade scroll si el contenido es demasiado grande */
 }
 
 .content img {
